@@ -248,6 +248,9 @@ A sanitized case study of a Windows desktop workflow-management system. The publ
 **[Cache State Backup & Restore — Case Study](case-studies/cache-state-backup-restore.md)**  
 A sanitized retrospective on a Bash utility that connected a relational database and Memcached to preserve selected cache state across maintenance operations, including the implementation assumptions and reliability improvements I would make today.
 
+**[Production Patch Automation — Case Study](case-studies/production-patch-automation.md)**  
+A sanitized retrospective on a Bash-based maintenance workflow that coordinated service shutdown, artifact backup and replacement, cache handling, restart sequencing, readiness checks, operational reporting, and channel recovery for a multi-service Linux application.
+
 Projects where I experiment with automation, operational tooling, infrastructure, and workflow improvements.
 
 ### 🧪 Experiments & Learning
