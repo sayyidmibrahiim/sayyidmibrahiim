@@ -242,6 +242,9 @@ A proposal should become stronger when someone finds a flaw in it.
 
 ### 🛠 Automation & Engineering
 
+**[Deployment Workflow Tracker — Case Study](case-studies/deployment-workflow-tracker.md)**  
+A sanitized case study of a Windows desktop workflow-management system. The public artifact focuses on problem framing, lifecycle design, architecture, reliability, AI-assisted implementation, and verification while excluding company-specific implementation details.
+
 Projects where I experiment with automation, operational tooling, infrastructure, and workflow improvements.
 
 ### 🧪 Experiments & Learning
