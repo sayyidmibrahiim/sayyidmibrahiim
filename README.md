@@ -264,11 +264,6 @@ A sanitized retrospective on a Bash-based maintenance workflow that coordinated 
 **[Cache State Backup & Restore — Case Study](case-studies/cache-state-backup-restore.md)**  
 A sanitized retrospective on a Bash utility that connected a relational database and Memcached to preserve selected cache state across maintenance operations, including the implementation assumptions and reliability improvements I would make today.
 
-### 🧪 Experiments & Learning
-
-**[Docker + Jenkins Integration Sample](https://github.com/sayyidmibrahiim/docker-jenkins-integration-sample)**  
-An early learning snapshot used to understand the local-code → GitHub → Jenkins → Docker delivery path. Kept intentionally as a learning artifact rather than presented as a production system.
-
 ### 🇮🇩 Public Systems
 
 Open proposals and prototypes exploring better systems for Indonesia.
