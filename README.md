@@ -245,6 +245,9 @@ A proposal should become stronger when someone finds a flaw in it.
 **[Deployment Workflow Tracker — Case Study](case-studies/deployment-workflow-tracker.md)**  
 A sanitized case study of a Windows desktop workflow-management system. The public artifact focuses on problem framing, lifecycle design, architecture, reliability, AI-assisted implementation, and verification while excluding company-specific implementation details.
 
+**[Cache State Backup & Restore — Case Study](case-studies/cache-state-backup-restore.md)**  
+A sanitized retrospective on a Bash utility that connected a relational database and Memcached to preserve selected cache state across maintenance operations, including the implementation assumptions and reliability improvements I would make today.
+
 Projects where I experiment with automation, operational tooling, infrastructure, and workflow improvements.
 
 ### 🧪 Experiments & Learning
