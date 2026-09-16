@@ -242,20 +242,32 @@ A proposal should become stronger when someone finds a flaw in it.
 
 ### 🛠 Automation & Engineering
 
+#### Public Source
+
+**[Docker Container State Monitoring](https://github.com/sayyidmibrahiim/monitoring-docker-images)**  
+A Bash-based monitoring utility that tracks Docker container/image state changes and sends Telegram notifications only when a state transition is detected.
+
+**[Solr Managed-Schema Pull / Push](https://github.com/sayyidmibrahiim/pull-push-managed-schema-solr)**  
+A historical SolrCloud operations script for pulling managed-schema files, backing up the current server-side version before push, applying replacements through ZooKeeper, and reloading affected collections.
+
+**[Solr Configset Maintenance Automation](https://github.com/sayyidmibrahiim/Bash-script-update-Solrconfig.xml)**  
+A historical Bash workflow for backing up Solr configsets, preparing edited `solrconfig.xml` files, and applying or rolling back configuration changes across multiple targets.
+
+#### Professional Case Studies
+
 **[Deployment Workflow Tracker — Case Study](case-studies/deployment-workflow-tracker.md)**  
 A sanitized case study of a Windows desktop workflow-management system. The public artifact focuses on problem framing, lifecycle design, architecture, reliability, AI-assisted implementation, and verification while excluding company-specific implementation details.
-
-**[Cache State Backup & Restore — Case Study](case-studies/cache-state-backup-restore.md)**  
-A sanitized retrospective on a Bash utility that connected a relational database and Memcached to preserve selected cache state across maintenance operations, including the implementation assumptions and reliability improvements I would make today.
 
 **[Production Patch Automation — Case Study](case-studies/production-patch-automation.md)**  
 A sanitized retrospective on a Bash-based maintenance workflow that coordinated service shutdown, artifact backup and replacement, cache handling, restart sequencing, readiness checks, operational reporting, and channel recovery for a multi-service Linux application.
 
-Projects where I experiment with automation, operational tooling, infrastructure, and workflow improvements.
+**[Cache State Backup & Restore — Case Study](case-studies/cache-state-backup-restore.md)**  
+A sanitized retrospective on a Bash utility that connected a relational database and Memcached to preserve selected cache state across maintenance operations, including the implementation assumptions and reliability improvements I would make today.
 
 ### 🧪 Experiments & Learning
 
-Smaller projects where I explore new technologies, tools, AI workflows, and engineering approaches.
+**[Docker + Jenkins Integration Sample](https://github.com/sayyidmibrahiim/docker-jenkins-integration-sample)**  
+An early learning snapshot used to understand the local-code → GitHub → Jenkins → Docker delivery path. Kept intentionally as a learning artifact rather than presented as a production system.
 
 ### 🇮🇩 Public Systems
 
