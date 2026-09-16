@@ -63,16 +63,16 @@ At a high level, the application evolved into a Windows desktop workflow-managem
 
 Its architecture uses:
 
-- **Python** for domain logic, services, and desktop-side orchestration
+- **Python** for domain logic, services, persistence, and desktop-side orchestration
 - **Svelte + TypeScript** for the user interface
-- **pywebview** as the bridge between frontend and Python
-- the **local filesystem as the canonical source of truth**
-- **SQLite as a rebuildable read cache**
+- **pywebview** as the single frontend/backend bridge
+- the **local filesystem as the canonical source of truth for project state**
+- **SQLite for two distinct purposes:** rebuildable read/cache data and durable operational ledger data
 - desktop integrations for supporting operational workflows
 
-The application does not model a project as one flat status. Instead, it separates several lifecycle concerns so that state transitions can be reasoned about explicitly.
+The application does not model a project as one flat status. Instead, it separates several related lifecycles so that transitions, guards, and side effects can be reasoned about explicitly.
 
-That distinction matters because operational workflows often contain multiple related states that should not be collapsed into one value.
+For example, project-folder state, request state, sub-ticket state, and non-request project state are treated as separate concerns rather than collapsed into one generic status.
 
 ---
 
@@ -80,7 +80,7 @@ That distinction matters because operational workflows often contain multiple re
 
 As the application grew, one of the major changes was separating responsibilities that had accumulated inside a large application module.
 
-The architecture evolved toward clearer layers:
+The backend evolved toward a one-way dependency structure:
 
 ```text
 Domain
@@ -102,11 +102,29 @@ The separation made it easier to:
 
 - understand ownership of behavior
 - change one area without unintentionally affecting another
-- test domain behavior independently
+- test domain and service behavior independently
 - isolate operating-system and integration concerns
 - reason about failures and recovery
 
 An earlier composition module had grown to roughly 2,600 lines and contained multiple adapter implementations. Those adapters were later extracted into dedicated modules, reducing the composition module to roughly 500 lines and making responsibilities more explicit.
+
+The frontend does not call desktop APIs directly across the codebase. Calls are funneled through one bridge layer, and bridge responses use a consistent result/error shape.
+
+---
+
+## Filesystem as Operational Truth
+
+A core design choice is that project state remains inspectable outside the application.
+
+For request-based projects, folder location itself represents a lifecycle state. Moving a project to another state therefore means moving its folder, while project metadata is stored alongside the project.
+
+That gives the system a useful property:
+
+> the operational state is still visible in the filesystem even when the application is not open.
+
+Metadata writes are performed atomically so an interrupted write does not silently replace a valid file with a half-written one.
+
+SQLite is deliberately not treated as one undifferentiated database. Disposable dashboard/cache projections can be rebuilt from canonical sources, while operational records that must survive rebuilds are classified separately as durable ledger data.
 
 ---
 
@@ -120,10 +138,12 @@ Several design decisions were driven by that idea:
 
 - explicit state-transition rules
 - validation before critical actions
-- keeping canonical state separate from rebuildable cache state
+- keeping canonical state separate from rebuildable derived state
+- protecting durable automation records from cache rebuilds
 - avoiding blind retries when an external action may already have partially completed
 - distinguishing confirmed failure from uncertain outcome
-- rebuilding derived state from the canonical source when necessary
+- rebuilding derived state from canonical sources when necessary
+- preserving evidence before state-changing automation where the workflow requires it
 
 A key principle became:
 
@@ -131,26 +151,59 @@ A key principle became:
 
 ---
 
+## Handling Uncertain External Actions
+
+Desktop automation introduced a specific reliability problem: sometimes a call can time out even though the external application may still complete the action.
+
+The application therefore distinguishes between two broad outcomes:
+
+```text
+failed
+→ the action is known not to have completed
+
+unknown
+→ the caller timed out, but the external action may still complete
+```
+
+That distinction matters because automatically retrying an `unknown` result can duplicate a real-world side effect.
+
+For desktop email integration, work is serialized through a bounded worker queue rather than allowing multiple concurrent COM operations to run freely.
+
+This is a good example of how the project moved from simple automation toward explicit failure semantics.
+
+---
+
+## Backend-to-Frontend Events
+
+The application also needs to push state changes from the backend toward the frontend.
+
+Rather than relying on a fire-and-forget callback, the implementation uses a bounded, sequenced event buffer.
+
+The frontend drains events using a cursor. If it falls so far behind that required events are no longer retained, the backend tells it to request a fresh snapshot rather than pretending the incomplete event history is valid.
+
+This turns a potentially fragile UI synchronization mechanism into something with an explicit recovery path.
+
+---
+
 ## Testing & Verification
 
 As the project became more complex, the verification strategy also evolved.
 
-The repository includes automated tests around areas such as:
+The repository contains automated backend tests covering areas such as:
 
 - application lifecycle behavior
 - state transitions
 - automation integrity
-- cache consistency
-- migration behavior
-- supporting services
+- approval and polling behavior
+- cache/projection consistency
+- migrations
+- supporting services and bootstrap behavior
 
-Visual behavior and some operating-system integrations still require manual verification because they depend on the desktop environment.
+The frontend also has automated checks/tests, while visual behavior and some operating-system integrations still require manual verification because they depend on the desktop environment.
 
-This reflects the way I work in general:
+The project documentation itself has also been reviewed against the code. That process exposed stale or conflicting assumptions in older documents, which reinforced another rule I use when working with AI-assisted systems:
 
-> Generated or implemented behavior is not considered correct just because the code looks plausible.
-
-It has to be checked against the intended behavior.
+> **documentation, generated explanations, and old design decisions are evidence to verify, not authority to trust blindly.**
 
 ---
 
@@ -188,6 +241,8 @@ Verify again
 
 As the project became larger, specification and verification became more important than simply generating more code.
 
+This project also taught me that AI can accelerate implementation faster than architecture and operational reasoning can keep up. Once that happens, the important work becomes defining boundaries, finding contradictions, testing failure modes, and keeping the system understandable.
+
 ---
 
 ## What This Project Represents
@@ -209,6 +264,8 @@ But the part I care most about remains the same:
 ## Public / Private Boundary
 
 This document is the public portfolio artifact for the project.
+
+The original repository and implementation remain private because they contain company-specific operational context.
 
 The public version intentionally avoids:
 
