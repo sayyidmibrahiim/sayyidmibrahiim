@@ -1,379 +1,136 @@
+<div align="center">
+
 # Hi, I'm Sayyid Ibrahim 👋
 
-### Systems & Automation Engineer · AI-Assisted Builder · Engineer of Wonder
+### **Systems & Automation Engineer · AI-Assisted Builder · Production Operations**
 
-I enjoy finding inefficient workflows, understanding why they work the way they do, and turning them into clearer, more reliable, and more automated systems.
+[![Location](https://img.shields.io/badge/Location-Jakarta%2C%20Indonesia-blue?style=flat-square&logo=googlemaps&logoColor=white)](https://github.com/sayyidmibrahiim)
+[![Focus](https://img.shields.io/badge/Focus-Production%20Systems%20%26%20Automation-success?style=flat-square)](https://github.com/sayyidmibrahiim)
+[![AI-Assisted](https://img.shields.io/badge/Workflow-AI--Augmented%20Engineering-orange?style=flat-square)](https://github.com/sayyidmibrahiim)
 
-My professional background is in **Application Support, Linux operations, Bash/Shell automation, CI/CD, and production systems**, primarily in banking and technology environments.
-
-Over time, that same way of thinking has expanded beyond my day-to-day work.
-
-I have become increasingly interested in a bigger question:
-
-> **How can we design better systems for people?**
+<p align="center">
+  <i>Specializing in production infrastructure, application support (L2/L3), and operational automation in banking & enterprise environments. Built 300+ production-grade automation scripts and tools.</i>
+</p>
 
 ---
 
-## About Me
+<!-- GITHUB STATS & METRICS -->
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <img src="https://github-readme-stats.vercel.app/api?username=sayyidmibrahiim&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" width="100%" alt="Sayyid's GitHub Stats" />
+    </td>
+    <td align="center" width="50%">
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sayyidmibrahiim&layout=compact&theme=tokyonight&hide_border=true" width="100%" alt="Top Languages" />
+    </td>
+  </tr>
+</table>
 
-I am not a traditional software engineer who writes entire applications from scratch.
-
-My strongest technical foundation comes from:
-
-- Linux operations
-- Bash / Shell scripting
-- Application Support L2/L3
-- Production troubleshooting
-- CI/CD workflows
-- Process automation
-- System operations
-- Operational problem solving
-
-In my professional work, I have built and maintained **hundreds of automation scripts and operational tools**, worked with critical production environments, automated deployment workflows, and improved repetitive operational processes.
-
-A large part of that work cannot be published publicly because it was built for internal company systems.
-
-So instead of pretending that everything I have built can be shown here, this GitHub represents two things:
-
-**what I can share publicly**, and  
-**what I am learning and building next.**
+</div>
 
 ---
 
-## How I Build
+## 🛠 Technical Toolbox
 
-The rise of modern AI tools changed the way I build software.
-
-I do not claim to manually write every line of Python, JavaScript, or frontend code from scratch.
-
-Instead, my workflow usually looks like this:
-
-Problem  
-↓  
-Understand the current process  
-↓  
-Define the desired outcome  
-↓  
-Break the system into behaviors and constraints  
-↓  
-Design the workflow  
-↓  
-Use AI to help implement  
-↓  
-Review  
-↓  
-Test  
-↓  
-Debug  
-↓  
-Challenge the result  
-↓  
-Refine  
-↓  
-Repeat until it works
-
-I spend a lot of time defining:
-
-- what the system should do
-- what it should never do
-- edge cases
-- failure conditions
-- validation rules
-- recovery behavior
-- user flow
-- system boundaries
-- verification criteria
-
-AI helps me move faster through implementation.
-
-But I still consider **problem definition, system logic, verification, and iteration** to be engineering work that cannot simply be delegated to a model.
-
-I use tools such as ChatGPT, Claude, Gemini, GitHub Copilot, and other AI systems as engineering collaborators rather than treating generated code as automatically correct.
+<table>
+  <tr>
+    <td width="25%"><b>Infrastructure & OS</b></td>
+    <td>
+      <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux" />
+      <img src="https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnu-bash&logoColor=white" alt="Bash" />
+      <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" alt="Git" />
+      <img src="https://img.shields.io/badge/Systemd-3E4959?style=flat-square&logo=linux&logoColor=white" alt="Systemd" />
+      <img src="https://img.shields.io/badge/SSH-000000?style=flat-square&logo=openssh&logoColor=white" alt="SSH" />
+    </td>
+  </tr>
+  <tr>
+    <td width="25%"><b>Operations & CI/CD</b></td>
+    <td>
+      <img src="https://img.shields.io/badge/App_Support_L2%2FL3-0052CC?style=flat-square" alt="Application Support" />
+      <img src="https://img.shields.io/badge/Production_Troubleshooting-D9381E?style=flat-square" alt="Troubleshooting" />
+      <img src="https://img.shields.io/badge/Jenkins-D24939?style=flat-square&logo=jenkins&logoColor=white" alt="Jenkins" />
+      <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
+      <img src="https://img.shields.io/badge/Process_Automation-008080?style=flat-square" alt="Automation" />
+    </td>
+  </tr>
+  <tr>
+    <td width="25%"><b>Data & Middleware</b></td>
+    <td>
+      <img src="https://img.shields.io/badge/Apache_Solr-D9411E?style=flat-square&logo=apache-solr&logoColor=white" alt="Solr" />
+      <img src="https://img.shields.io/badge/Apache_Kafka-231F20?style=flat-square&logo=apache-kafka&logoColor=white" alt="Kafka" />
+      <img src="https://img.shields.io/badge/ZooKeeper-000000?style=flat-square" alt="ZooKeeper" />
+      <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL" />
+      <img src="https://img.shields.io/badge/MariaDB-003545?style=flat-square&logo=mariadb&logoColor=white" alt="MariaDB" />
+      <img src="https://img.shields.io/badge/Memcached-00758F?style=flat-square" alt="Memcached" />
+    </td>
+  </tr>
+  <tr>
+    <td width="25%"><b>Modern & AI Tooling</b></td>
+    <td>
+      <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
+      <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript" />
+      <img src="https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white" alt="Playwright" />
+      <img src="https://img.shields.io/badge/Svelte-FF3E00?style=flat-square&logo=svelte&logoColor=white" alt="Svelte" />
+      <img src="https://img.shields.io/badge/AI_Assisted_Engineering-7B1FA2?style=flat-square" alt="AI Assisted" />
+    </td>
+  </tr>
+</table>
 
 ---
 
-## Professional Background
+## ⚡ How I Build Systems
 
-My career has primarily been in **Application Support and production systems**.
+```text
+[ 1. Problem Framing ] ──► [ 2. Constraints & Edge Cases ] ──► [ 3. AI-Assisted Build ] ──► [ 4. Hard Verification ] ──► [ 5. Production Hardening ]
+```
 
-Some areas I have worked with include:
-
-`Linux` · `Bash/Shell` · `Jenkins` · `CI/CD` · `MySQL` · `MariaDB` · `Apache Solr` · `Kafka` · `Zookeeper` · `Docker` · `Git`
-
-A few examples of the kind of work I have done professionally:
-
-- Built and maintained **300+ automation, operational, scheduler, and ad-hoc scripts**
-- Automated deployment workflows for critical production systems
-- Built monitoring and operational automation to reduce repetitive manual work
-- Automated patch-management processes that significantly reduced maintenance time
-- Worked on Linux-based application environments and supporting infrastructure
-- Investigated production incidents and recurring system failures
-- Collaborated with business, SRE, DevOps, security, and other technical teams
-- Designed operational workflows and documentation for repeatable processes
-
-Most production implementations from my professional work are proprietary and therefore are **not published on this GitHub**.
+I approach software from an operational and reliability perspective:
+- **Define rigorously:** What the system must do, what it must never do, and where failure can occur.
+- **AI as collaborator:** Using LLMs to accelerate implementation while keeping system boundaries, validation rules, and recovery behaviors strictly human-guided.
+- **Verify aggressively:** Proof before assertion. Every workflow is challenged with edge cases, failure conditions, and observable metrics.
 
 ---
 
-## What I Naturally Look For
+## 📁 Selected Work & Case Studies
 
-Whenever I see a repetitive process, I tend to ask:
-
-> Why is someone still doing this manually?
-
-When I see a complicated workflow:
-
-> Which steps actually need to exist?
-
-When something fails:
-
-> Where did the system lose control?
-
-When several teams are involved:
-
-> Who owns the next action?
-
-And when AI generates something that looks convincing:
-
-> How do we prove that it is actually correct?
-
-That curiosity is where the name **Engineer of Wonder** comes from.
+| Project / Case Study | Category | Focus |
+|---|---|---|
+| **[Deployment Workflow Tracker](case-studies/deployment-workflow-tracker.md)** | Production Case Study | Desktop workflow management, lifecycle design, and AI-assisted implementation. |
+| **[Production Patch Automation](case-studies/production-patch-automation.md)** | Production Case Study | Multi-service Linux maintenance workflow, service shutdown/sequencing, and rollback. |
+| **[Cache State Backup & Restore](case-studies/cache-state-backup-restore.md)** | Production Case Study | Relational database & Memcached coordination for zero cache-loss maintenance. |
+| **[Docker Container State Monitoring](https://github.com/sayyidmibrahiim/monitoring-docker-images)** | Tool / Utility | Bash-based state machine monitoring container transitions with Telegram notifications. |
+| **[Solr Managed-Schema Sync](https://github.com/sayyidmibrahiim/pull-push-managed-schema-solr)** | Tool / Utility | SolrCloud schema migration, backup before push, ZooKeeper sync, and collection reload. |
+| **[Solr Configset Maintenance](https://github.com/sayyidmibrahiim/Bash-script-update-Solrconfig.xml)** | Tool / Utility | Automated multi-target `solrconfig.xml` backup, rollout, and rollback. |
 
 ---
 
-# 🇮🇩 Building Toward Better Systems for Indonesia
-
-One of the long-term directions I want to explore through this GitHub is **public-system design in Indonesia**.
-
-There are many systems around us that affect everyday life:
-
-- public complaints
-- healthcare
-- education
-- public administration
-- transportation
-- social assistance
-- public safety
-- government services
-- bureaucracy
-- public information
-
-When something feels unnecessarily complicated, opaque, inefficient, or unfair, I do not want to stop at:
-
-> "This system is bad."
-
-I want to ask:
-
-> **How does the current system actually work?**
-
-Then:
-
-> **What could a better version look like?**
-
-My goal is to gradually create public repositories that explore those questions through:
-
-Existing System  
-↓  
-Process Mapping  
-↓  
-Problem Analysis  
-↓  
-Constraints  
-↓  
-Research  
-↓  
-Proposed Workflow  
-↓  
-System Design  
-↓  
-Prototype / Simulation  
-↓  
-Risks & Trade-offs  
-↓  
-Success Metrics  
-↓  
-Public Discussion  
-↓  
-Improvement
-
-These projects will not be presented as absolute answers.
-
-They will be **open engineering proposals** that can be questioned, criticized, corrected, and improved by people with better domain knowledge.
-
----
-
-## Principles for Public-System Projects
-
-I want these projects to follow several principles:
-
-**Understand before redesigning.**
-
-Technology should not be added simply because technology is available.
-
-**Separate evidence from assumptions.**
-
-If something is unknown, it should be marked as unknown.
-
-**Design for real operational constraints.**
-
-A beautiful architecture that cannot operate in the real world is not a good system.
-
-**Consider failure modes.**
-
-What happens when the normal process breaks?
-
-**Make responsibility visible.**
-
-Who owns the next action?
-
-**Measure outcomes.**
-
-A system is not better just because the interface looks better.
-
-**Invite criticism.**
-
-A proposal should become stronger when someone finds a flaw in it.
-
----
-
-## Selected Public Projects
-
-<!-- PROJECTS:START -->
-
-### 🛠 Automation & Engineering
-
-#### Public Source
-
-**[Docker Container State Monitoring](https://github.com/sayyidmibrahiim/monitoring-docker-images)**  
-A Bash-based monitoring utility that tracks Docker container/image state changes and sends Telegram notifications only when a state transition is detected.
-
-**[Solr Managed-Schema Pull / Push](https://github.com/sayyidmibrahiim/pull-push-managed-schema-solr)**  
-A historical SolrCloud operations script for pulling managed-schema files, backing up the current server-side version before push, applying replacements through ZooKeeper, and reloading affected collections.
-
-**[Solr Configset Maintenance Automation](https://github.com/sayyidmibrahiim/Bash-script-update-Solrconfig.xml)**  
-A historical Bash workflow for backing up Solr configsets, preparing edited `solrconfig.xml` files, and applying or rolling back configuration changes across multiple targets.
-
-#### Professional Case Studies
-
-**[Deployment Workflow Tracker — Case Study](case-studies/deployment-workflow-tracker.md)**  
-A sanitized case study of a Windows desktop workflow-management system. The public artifact focuses on problem framing, lifecycle design, architecture, reliability, AI-assisted implementation, and verification while excluding company-specific implementation details.
-
-**[Production Patch Automation — Case Study](case-studies/production-patch-automation.md)**  
-A sanitized retrospective on a Bash-based maintenance workflow that coordinated service shutdown, artifact backup and replacement, cache handling, restart sequencing, readiness checks, operational reporting, and channel recovery for a multi-service Linux application.
-
-**[Cache State Backup & Restore — Case Study](case-studies/cache-state-backup-restore.md)**  
-A sanitized retrospective on a Bash utility that connected a relational database and Memcached to preserve selected cache state across maintenance operations, including the implementation assumptions and reliability improvements I would make today.
-
-### 🇮🇩 Public Systems
-
-Open proposals and prototypes exploring better systems for Indonesia.
-
-*This section will grow as projects are published.*
-
-<!-- PROJECTS:END -->
-
----
-
-## Current Technical Toolbox
-
-### Strongest Experience
-
-`Bash / Shell`  
-`Linux`  
-`Application Support`  
-`Automation`  
-`Production Troubleshooting`  
-`Jenkins / CI-CD`
-
-### Working Knowledge
-
-`Git`  
-`Docker`  
-`MySQL / MariaDB`  
-`Apache Solr`  
-`Kafka`  
-`Zookeeper`
-
-### Building With
-
-`Python`  
-`Playwright`  
-`JavaScript / TypeScript`  
-`HTML / CSS`  
-`Svelte`  
-`AI-assisted development`
-
-I deliberately separate **technologies I have deep professional experience with** from technologies I currently use with significant AI assistance.
-
----
-
-## What I'm Learning
-
-I am currently interested in improving my understanding of:
-
-- software architecture
-- systems design
-- reliable automation
-- AI-assisted software engineering
-- testing and verification
-- agentic systems
-- system observability
-- human-centered system design
-- civic technology
-- public-system architecture
-
-My goal is not to collect technologies.
-
-I want to become better at turning ambiguous problems into systems that actually work.
-
----
-
-## Beyond Code
-
-I studied **Information Systems**, and before that I studied **Software Engineering in vocational high school**.
-
-My career eventually moved closer to operations, infrastructure, application support, and automation rather than traditional application development.
-
-That path shaped how I think.
-
-I tend to approach software from the perspective of:
-
-**What happens in production?**
-
-**Who operates this?**
-
-**What happens when it fails?**
-
-**Can this process be automated?**
-
-**How do we know it worked?**
-
----
-
-## Long-Term Direction
-
-I want to grow from someone who automates individual tasks into someone capable of understanding and designing **larger systems**.
-
-Not just software systems.
-
-Operational systems.
-
-Organizational workflows.
-
-Public systems.
-
-Systems that affect real people.
-
-I do not know yet where that path will eventually lead.
-
-But this GitHub is where I intend to document the journey.
+## 📖 Deep Dive: Background, Philosophy & Public Systems
+
+<details>
+<summary><b>Click to expand: Read Full Engineering Philosophy & Public System Vision</b></summary>
+<br>
+
+### The "Engineer of Wonder" Mindset
+Whenever I encounter a system, I ask:
+- *Why is someone still doing this manually?*
+- *Which steps actually need to exist?*
+- *Where did the system lose control when it failed?*
+- *How do we prove generated or automated solutions are correct?*
+
+### 🇮🇩 Building Toward Better Systems for Indonesia
+One of my core long-term directions is exploring **civic technology and public system design** in Indonesia (complaint handling, health, social services, and public administration).
+
+**Guiding Principles:**
+1. **Understand before redesigning:** Don't add technology for the sake of novelty.
+2. **Design for real operational constraints:** A system that cannot function in real field conditions is flawed.
+3. **Account for failure modes:** Plan for what happens when normal workflows break down.
+4. **Make responsibility visible:** Ensure it is always clear who owns the next action.
+5. **Open proposals:** Sharing prototypes as open engineering proposals to be criticized and refined by domain experts.
+
+</details>
 
 ---
 
 <div align="center">
-
-### Engineer of Wonder 💭
-
-**Wonder → Understand → Design → Build → Verify → Improve**
-
+  <sub>Wonder → Understand → Design → Build → Verify → Improve</sub>
 </div>
